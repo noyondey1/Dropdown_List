@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul.navlinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul.navlinks li {
+    background:lightslategrey;
+    position: relative;
+}
+
+ul.navlinks li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.9375rem 1.25rem;
+}
+ul.navlinks li:hover{
+    background-color: lightsteelblue;
+}
+ul.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+ul.navlinks li:hover ul.list{
+    display: block;
+}
+
+/* Sub Dropdown Menu */
+ul.list li{
+    position: relative;
+}
+ul.sub-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+ul.list li:hover ul.sub-list{
+    display: block;
+}
+ul.social{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+}
+ul.navlinks li:hover ul.social{
+    display: block;
+}
